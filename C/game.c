@@ -43,24 +43,24 @@ void Game_New()
     char question[128];
     sprintf(question, "Pop Question %d", i);
     lastPopQuestion->question = strdup(question);
-    if (i == 50)
+    if (i == 49)
       lastPopQuestion->next = NULL;
     else
       lastPopQuestion = lastPopQuestion->next = malloc(sizeof(*lastPopQuestion));
     sprintf(question, "Science Question %d", i);
     lastScienceQuestion->question = strdup(question);
-    if (i == 50)
+    if (i == 49)
       lastScienceQuestion->next = NULL;
     else
       lastScienceQuestion = lastScienceQuestion->next = malloc(sizeof(*lastScienceQuestion));
     sprintf(question, "Sports Question %d", i);
     lastSportsQuestion->question = strdup(question);
-    if (i == 50)
+    if (i == 49)
       lastSportsQuestion->next = NULL;
     else
       lastSportsQuestion = lastSportsQuestion->next = malloc(sizeof(*lastSportsQuestion));
     lastRockQuestion->question = createRockQuestion(i);
-    if (i == 50)
+    if (i == 49)
       lastRockQuestion->next = NULL;
     else
       lastRockQuestion = lastRockQuestion->next = malloc(sizeof(*lastRockQuestion));
